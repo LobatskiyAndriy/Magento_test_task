@@ -1,0 +1,18 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <referenceContainer name="footer-container">
+            <container htmlTag="div" htmlClass="footer content" before="copyright_custom">
+                <container htmlTag="div" htmlClass="tabel_wrap">
+                    <block class="Magento\Cms\Block\Block" name="block_identifier">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">test_block_in_cms_magento_2</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
+            <block class="Magento\Theme\Block\Html\Footer" name="copyright" as="copyright_custom" template="html/footer.phtml" />
+        </referenceContainer>
+
+    </body>
+</page>
